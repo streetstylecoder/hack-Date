@@ -1,0 +1,27 @@
+{
+	"messages": [
+		"Back",
+		"Forward",
+		"Reload",
+		"More Browser Actions",
+		"Previous",
+		"Next",
+		"Close",
+		"Open in Browser",
+		"Find in Page",
+		"Open Devtools Pane"
+	],
+	"keys": [
+		"back",
+		"forward",
+		"reload",
+		"more",
+		"findPrev",
+		"findNext",
+		"findX",
+		"browser_open",
+		"find",
+		"devtoolsOpen"
+	],
+	"filePath": "src/editorPreview/webviewComm"
+}

@@ -1,0 +1,15 @@
+{
+	"messages": [
+		"Don't Show Again",
+		"Open Externally",
+		"Embedded Live Preview Console",
+		"Run Server"
+	],
+	"keys": [
+		"dont show again",
+		"open externally",
+		"output channel name",
+		"task name"
+	],
+	"filePath": "src/utils/constants"
+}

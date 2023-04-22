@@ -1,0 +1,23 @@
+{
+	"messages": [
+		"Live Preview Ports",
+		"Port: {0}",
+		"Ports: {0}",
+		"{0} Ports",
+		"non-workspace files",
+		"Live Preview running on port:",
+		"Live Preview running on ports:",
+		"Open Command Palette"
+	],
+	"keys": [
+		"livePreviewPorts",
+		"port",
+		"port",
+		"port",
+		"nonWorkspaceFiles",
+		"livePreviewRunningOnPort",
+		"livePreviewRunningOnPorts",
+		"openCommandPalette"
+	],
+	"filePath": "src/server/serverUtils/statusBarNotifier"
+}

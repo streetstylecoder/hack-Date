@@ -1,0 +1,105 @@
+{
+	"name": "mithril-emmet",
+	"displayName": "Mithril Emmet",
+	"description": "Support Emmet(zen-coding) syntax for Mithril",
+	"version": "0.7.7",
+	"publisher": "FallenMax",
+	"engines": {
+		"vscode": "^1.21.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"mithril",
+		"emmet",
+		"expander",
+		"snippet"
+	],
+	"activationEvents": [
+		"onCommand:mithrilEmmet.expand"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/FallenMax/mithril-emmet"
+	},
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "mithrilEmmet.expand",
+				"title": "Expand Emmet to Mithril"
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "Mithril Emmet configuration",
+			"properties": {
+				"mithrilEmmet.vnodeFactoryFunctionName": {
+					"type": "string",
+					"default": "m",
+					"description": "Specifies the name of vnode factory function. E.g. for mithril, use 'm'; for hyperscript, use 'h'."
+				},
+				"mithrilEmmet.outputDefaultTagName": {
+					"type": "boolean",
+					"default": true,
+					"description": "If false, default tag name ('div')  will be omitted, i.e. '.some-class' instead of 'div.some-class'"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile && npm run test",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "jest",
+		"test:watch": "jest --watch"
+	},
+	"devDependencies": {
+		"@types/jest": "^25.1.2",
+		"@types/node": "^13.7.1",
+		"@types/prettier": "^1.19.0",
+		"jest": "^25.1.0",
+		"ts-jest": "^25.2.0",
+		"tslint": "^6.0.0",
+		"typescript": "^3.7.5",
+		"vscode": "^1.1.36"
+	},
+	"dependencies": {
+		"emmet": "^2.0.0-rc.10",
+		"@emmetio/abbreviation": "^2.0.0-rc.6",
+		"prettier": "^1.19.1"
+	},
+	"jest": {
+		"transform": {
+			"^.+\\.tsx?$": "ts-jest"
+		},
+		"testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+		"moduleFileExtensions": [
+			"ts",
+			"tsx",
+			"js",
+			"jsx",
+			"json",
+			"node"
+		],
+		"globals": {
+			"ts-jest": {
+				"diagnostics": false
+			}
+		}
+	},
+	"icon": "images/logo.png",
+	"__metadata": {
+		"id": "4f63037e-3a44-436f-a483-4c65a77f15f6",
+		"publisherId": "9397af6d-25d3-433c-8d33-40031231ba67",
+		"publisherDisplayName": "FallenMax",
+		"targetPlatform": "undefined",
+		"isApplicationScoped": false,
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"preRelease": false,
+		"installedTimestamp": 1660473865326
+	}
+}

@@ -1,0 +1,92 @@
+{% extends 'layouts/default/page.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+
+{% if messages %}
+<div class="alert alert-success" role="alert">
+    {% for message in messages %}
+    {{ message }}
+    {% endfor %}
+</div>
+{% endif %}
+
+{{ans}}
+
+
+{% for i in data %}
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-4">
+                {% if i.name%}
+                <img src="https://assets.devfolio.co/assets/avatar@2x.png" class="rounded-circle img-fluid" alt="Profile Picture">
+                {% endif%}
+                {% if i.name1 %}
+                <img src="https://assets.devfolio.co/assets/avatar@2x.png" class="rounded-circle img-fluid" alt="Profile Picture">
+                {%endif%}
+                {% if i.name2 %}
+                <img src="https://assets.devfolio.co/assets/avatar@2x.png" class="rounded-circle img-fluid" alt="Profile Picture">
+                {%endif%}
+
+            </div>
+            <form method="POST" action="" >
+             {% csrf_token %}
+              <div class="col-md-8">
+                <h3> {{i.hackathon_name}}</h3>
+
+                Team name : {{i.team}} <br>
+                Team leader details <br>
+                Name: {{i.name}}
+                <br>
+                {% if i.name2 %}
+                Team details ------<br>
+                {% endif%}
+                {% if i.name2 %}
+                Member 1 : {{ i.name2}}
+
+                {% endif%}
+                <br>
+                {% if i.name3 %}
+                Member 2 : {{ i.name3}}
+                
+                {% endif%}
+
+               
+                
+
+                <ul class="list-inline">
+                  <li class="list-inline-item"><i class="fa fa-user"></i>Team Size: X</li>
+                  <li class="list-inline-item"><i class="fa fa-map-marker"></i>Location: City, Country</li>
+                </ul>
+                <a class="btn btn-primary" href="{% url 'team_analysis' i.slug %}">Analyse team</a>
+                     
+                  <a class="btn btn-success" href="{% url 'maketeamreq' i.slug %}">Send request</a>
+                  
+                  
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br>
+</form>
+
+
+{% endfor %}
+
+
+
+
+
+{% endblock%}

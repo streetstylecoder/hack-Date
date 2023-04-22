@@ -1,0 +1,9 @@
+{
+	"messages": [
+		"The IP address \"{0}\" cannot be used to host the server. Using default IP {1}."
+	],
+	"keys": [
+		"ipCannotConnect"
+	],
+	"filePath": "src/connectionInfo/connection"
+}

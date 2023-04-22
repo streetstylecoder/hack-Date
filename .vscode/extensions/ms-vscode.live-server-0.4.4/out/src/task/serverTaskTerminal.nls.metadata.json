@@ -1,0 +1,25 @@
+{
+	"messages": [
+		"Opening Server...",
+		"Server already running in another task. Closing now.",
+		"Closing the server...",
+		"Started Server on {0}",
+		"Server already on at {0}",
+		"Type {0} to close the server.",
+		"Server stopped. Bye!",
+		"This task will finish now, but the server will stay on since you've used the embedded preview recently.",
+		"Run 'Live Preview: Stop Server' in the command palette to close the server and close any previews."
+	],
+	"keys": [
+		"openingServer",
+		"serverAlreadyRunning",
+		"serverClosing",
+		"startedServer",
+		"serverAlreadyStarted",
+		"ctrlCToCloseServer",
+		"serverStopped",
+		"taskFinished",
+		"runToStopServer"
+	],
+	"filePath": "src/task/serverTaskTerminal"
+}

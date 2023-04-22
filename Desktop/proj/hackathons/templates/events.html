@@ -1,0 +1,27 @@
+<!-- home.html -->
+{% extends 'layouts/default/page.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+<div class="row">
+    {% for hackathon in data %}
+      <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="card">
+        
+          <div class="card-body">
+            <img class="card-img-top" src="{{ hackathon.image.url }}" alt="{{ hackathon.name }}">
+            <h5 class="card-title">Name: {{ hackathon.name }}</h5>
+            <p class="card-text"> Venue 📍:{{ hackathon.description }}</p>
+            <p class="card-text">Description 🗒️:{{ hackathon.description }}</p>
+            <p class="card-text">Prize money 🏆:{{ hackathon.prize_money }}</p>
+            <p class="card-text">Date 🗓️:{{ hackathon.date }}</p>
+            <a href = "{{hackathon.Apply}}" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+{% endblock%}

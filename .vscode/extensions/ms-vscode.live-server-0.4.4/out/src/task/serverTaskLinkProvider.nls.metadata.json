@@ -1,0 +1,13 @@
+{
+	"messages": [
+		"Reveal Folder ",
+		"Open File ",
+		"Open in Preview"
+	],
+	"keys": [
+		"revealFolder",
+		"openFile",
+		"openInPreview"
+	],
+	"filePath": "src/task/serverTaskLinkProvider"
+}

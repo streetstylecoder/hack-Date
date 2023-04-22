@@ -1,0 +1,9 @@
+{
+	"messages": [
+		"Externally hosted links are not supported in the embedded preview. Do you want to open {0} in an external browser?"
+	],
+	"keys": [
+		"unsupportedLink"
+	],
+	"filePath": "src/editorPreview/browserPreview"
+}

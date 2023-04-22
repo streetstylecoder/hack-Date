@@ -1,0 +1,38 @@
+{% extends 'layouts/default/page.html' %}
+
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+
+
+Team analysis comes <br>
+Team level as per ML model {{scoreval}} <br>
+
+Team name: {{team.team}}
+<br>
+<h1>
+Team leader:{{team.name}}</h1>
+<br>
+{% with url1="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username="|add:team.github1|add:"&show_icons=true&hide_border=true&theme=tokyonight"  url2="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username="|add:team.github1|add:"&layout=compact&show_icons=true&hide_border=true&theme=tokyonight"  url3="https://github-readme-activity-graph.cyclic.app/graph?username="|add:team.github1|add:"&bg_color=0f2d3d&color=1cadfb&line=1cadfb&point=1cadfb&area=true&hide_border=true" %}
+<img src={{url1}}>
+<p>Languages used</p>
+<img src={{url2}}>
+<p>Contribution graph of the member</p>
+<img src={{url3}}>
+{% endwith %}
+{% if team.name2 %}
+{% with url1="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username="|add:team.github2|add:"&show_icons=true&hide_border=true&theme=tokyonight"  url2="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username="|add:team.github2|add:"&layout=compact&show_icons=true&hide_border=true&theme=tokyonight"  url3="https://github-readme-activity-graph.cyclic.app/graph?username="|add:team.github2|add:"&bg_color=0f2d3d&color=1cadfb&line=1cadfb&point=1cadfb&area=true&hide_border=true" %}
+<img src={{url1}}>
+<p>Languages used</p>
+<img src={{url2}}>
+<p>Contribution graph of the member</p>
+<img src={{url3}}>
+{% endwith %}
+
+
+
+
+{% endif%}
+
+{% endblock%}

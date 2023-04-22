@@ -1,0 +1,23 @@
+{
+	"messages": [
+		"File not found",
+		"The file {0} cannot be found. It may have been moved, edited, or deleted.",
+		"No Server Root",
+		"This server is not based inside of a workspace, so the index does not direct to anything.",
+		"Index of {0}",
+		"Name",
+		"Size",
+		"Date Modified"
+	],
+	"keys": [
+		"fileNotFound",
+		"fileNotFoundMsg",
+		"noServerRoot",
+		"noWorkspaceOpen",
+		"indexOfTitlePath",
+		"name",
+		"size",
+		"dateModified"
+	],
+	"filePath": "src/server/serverUtils/contentLoader"
+}

@@ -1,0 +1,11 @@
+{
+	"messages": [
+		"Cannot use the host \"{0}\" when using a remote connection. Using default {1}.",
+		"The local IP address \"{0}\" is not formatted correctly. Using default {1}."
+	],
+	"keys": [
+		"hostCannotConnect",
+		"ipAddressIncorrectFormat"
+	],
+	"filePath": "src/connectionInfo/connectionManager"
+}

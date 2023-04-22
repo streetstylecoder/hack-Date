@@ -1,0 +1,17 @@
+{
+	"messages": [
+		"Select the port that corresponds to the server that you want to stop",
+		"The file '{0}' does not exist.",
+		"Tried to open preview on invalid URI",
+		"All Servers",
+		"non-workspace files"
+	],
+	"keys": [
+		"selectPort",
+		"fileDNE",
+		"badURL",
+		"allServers",
+		"nonWorkspaceFiles"
+	],
+	"filePath": "src/manager"
+}

@@ -1,0 +1,9 @@
+{
+	"messages": [
+		"Previewing a file that is not a child of the server root. To see fully correct relative file links, please open a workspace at the project root."
+	],
+	"keys": [
+		"notPartOfWorkspace"
+	],
+	"filePath": "src/editorPreview/previewManager"
+}
